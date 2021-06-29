@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('./layout/head.html')
+</head>
+<body>
+    <div class="skip-navigation">
+        <a href="#container">메뉴 건너뛰기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        @@include('./layout/header.html')
+        <!-- // header -->
+
+        <div id="container" class="container">
+            @@include('./layout/page-title.html', {
+                cate07 : true,
+                now : 'FAQ',
+                title : 'FAQ'
+            })
+            
+            <div class="contents-area">
+                <div class="border-tabs">
+                    <div class="scrolls">
+                        <ul class="tabs" data-toggle="class-toggle"><!-- 'active' class toggle 필요없을 시 'data-toggle ~' 삭제 -->
+                            <li class="active"><a href="#n">전체</a></li>
+                            <li><a href="#n">카테고리1</a></li>
+                            <li><a href="#n">카테고리1</a></li>
+                            <li><a href="#n">카테고리1</a></li>
+                            <li><a href="#n">카테고리1</a></li>
+                            <li><a href="#n">카테고리1</a></li>
+                            <li><a href="#n">카테고리1</a></li>
+                            <li><a href="#n">카테고리1</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                @@include('./modules/accordion-list.html')
+
+                @@include('./modules/pagination.html')
+            </div>
+        </div>
+
+        <!-- footer -->
+        @@include('./layout/footer.html')
+        <!-- // footer -->
+    </div>
+
+    <script>
+        $(function(){
+            accordion();
+            classToggle();
+        });
+    </script>
+</body>
+</html>

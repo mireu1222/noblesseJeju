@@ -130,6 +130,7 @@
         }
     }
     .board-foot {
+        position:relative;
         .more-view {
             display:flex;
             justify-content:space-between;
@@ -143,6 +144,10 @@
                 position:relative;
                 flex:1;
                 width:50%;
+                @include mobile {
+                    flex:0;
+                    width:calc((100% - 50px) / 2);
+                }
                 &.prev {
                     padding-left:40px;
                 }
@@ -200,6 +205,40 @@
                 &.next dl {
                     flex-direction:row-reverse;
                 }
+            }
+        }
+        .btn-list {
+            position:absolute;
+            top:0;
+            left:50%;
+            width:60px;
+            height:100%;
+            margin-left:-30px;
+            @include mobile {
+                width:50px;
+                margin-left:-25px;
+            }
+            .bar,
+            &::before,
+            &::after {
+                content:' ';
+                position:absolute;
+                top:50%;
+                width:30px;
+                height:2px;
+                margin-left:-15px;
+                margin-top:-1px;
+                background:#666;
+                @include mobile {
+                    width:24px;
+                    margin-left:-12px;
+                }
+            }
+            &::before {
+                margin-top:-10px;
+            }
+            &::after {
+                margin-top:8px;
             }
         }
     }

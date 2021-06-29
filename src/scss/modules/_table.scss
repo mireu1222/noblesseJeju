@@ -2,13 +2,14 @@
 .tbl-wrap {
     position:relative;
     &.narrow {
-        width:930px;
+        max-width:930px;
         margin:0 auto;
     }
     .tbl-title {
-        margin-bottom:25px;
-        @include font-xl;
+        margin-bottom:20px;
+        @include font-lg;
         font-weight:500;
+        word-break:keep-all;
     }
     .tbl-desc {
         margin-bottom:15px;
@@ -30,11 +31,13 @@
         }
     }
     .essen-txt {
-        margin-top:55px;
-        margin-bottom:15px;
+        margin-bottom:10px;
         color:$cont;
-        font-size:15px;
+        @include font-sm;
         text-align:right;
+        @include mobile {
+            margin-bottom:5px;
+        }
         span {
             color:$red;
         }
@@ -138,7 +141,10 @@
         }
         &.row-table {
             .col1 {
-                @include calcs(width, 156px, 930px);
+                width:156px;
+                @include mobile {
+                    width:100px;
+                }
             }
             tbody {
                 tr {
@@ -153,10 +159,13 @@
                         padding:13px 25px;
                         border-bottom:1px solid $border;
                         background:$disabled;
-                        @include font-lg;
+                        @include font;
                         font-weight:500;
                         text-align:left;
                         vertical-align:middle;
+                        @include mobile {
+                            padding:13px 10px;
+                        }
                         &.essen {
                             &::after {
                                 content:'*';
@@ -171,11 +180,8 @@
                         @include font-lg;
                         text-align:left;
                         vertical-align:middle;
-                        .form-control {
-                            height:50px;
-                            min-height:50px;
-                            padding:13px 24px;
-                            background:$white;
+                        @include mobile {
+                            padding:13px 10px;
                         }
                         textarea.form-control {
                             height:180px;

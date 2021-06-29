@@ -4,7 +4,7 @@ $(function () {
 });
 
 $(window).on('load', function(){
-    xScroll('.sub-depth-wrap .scroll');
+    xScroll('.border-tabs .scrolls');
 });
 
 function gnbOpen() {

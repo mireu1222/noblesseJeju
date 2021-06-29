@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('./layout/head.html')
+</head>
+<body>
+    <div class="skip-navigation">
+        <a href="#container">메뉴 건너뛰기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        @@include('./layout/header.html')
+        <!-- // header -->
+
+        <div id="container" class="container">
+            @@include('./layout/page-title.html', {
+                cate06 : true,
+                now : '이미지갤러리',
+                title : '이미지갤러리'
+            })
+            
+            <div class="contents-area">
+                @@include('./modules/thumb-list.html', {
+                    link : '/page/sub_06_02_view.html',
+                    thumbType : true,
+                    lists : [
+                        {
+                            title : '제목이 들어감',
+                            desc : '미리보기 내용이 들어감'
+                        },
+                        {
+                            title : '제목이 들어감',
+                            desc : '미리보기 내용이 들어감'
+                        },
+                        {
+                            title : '제목이 들어감',
+                            desc : '미리보기 내용이 들어감'
+                        },
+                        {
+                            title : '제목이 들어감',
+                            desc : '미리보기 내용이 들어감'
+                        },
+                        {
+                            title : '제목이 들어감',
+                            desc : '미리보기 내용이 들어감'
+                        },
+                        {
+                            title : '제목이 들어감',
+                            desc : '미리보기 내용이 들어감'
+                        },
+                        {
+                            title : '제목이 들어감',
+                            desc : '미리보기 내용이 들어감'
+                        },
+                    ]
+                })
+
+                @@include('./modules/pagination.html')
+            </div>
+        </div>
+
+        <!-- footer -->
+        @@include('./layout/footer.html')
+        <!-- // footer -->
+    </div>
+</body>
+</html>

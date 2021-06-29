@@ -4,16 +4,22 @@
     padding:0 14px;
     border:1px solid transparent;
     background:transparent;
-    font-size:14px;
+    font-size:16px;
     line-height:38px;
     vertical-align:top;
     cursor:pointer;
     transition:$btn-transition;
     white-space:nowrap;
     text-align:center;
+    @include mobile {
+        font-size:14px;
+    }
     span {
         display:inline-block;
         vertical-align:top;
+    }
+    &.radius {
+        border-radius:8px;
     }
     // style
     @each $color, $value, $ratio in $colors {
@@ -48,7 +54,7 @@
         }
     }
     // size
-    @each $size, $fontsize, $lineheight, $pd in $btn-sizes {
+    @each $size, $fontsize, $lineheight, $pd, $mfontsize, $mlineheight in $btn-sizes {
         &.btn-#{$size} {
             padding:0 $pd;
             font-size:$fontsize;
@@ -58,6 +64,10 @@
             } @else if $size == 'md' {
                 min-width:120px;
                 font-weight:500;
+            }
+            @include mobile {
+                font-size:$mfontsize;
+                line-height:$mlineheight;
             }
             &.rounded {
                 border-radius:($lineheight / 2 + 1);
@@ -82,16 +92,20 @@
 }
 .btn-group {
     display:flex;
-    margin-top:70px;
+    margin-top:80px;
     justify-content:center;
-    &.high {
-        margin-top:120px;
+    @include mobile {
+        margin-top:40px;
     }
     > * {
         min-width:230px;
-        margin-left:20px;
+        margin-left:10px;
         &:first-child {
             margin-left:0;
+        }
+        @include mobile {
+            min-width:auto;
+            flex:1;
         }
     }
 }

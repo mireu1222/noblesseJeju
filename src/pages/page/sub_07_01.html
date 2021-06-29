@@ -14,20 +14,20 @@
 
         <div id="container" class="container">
             @@include('./layout/page-title.html', {
-                cate05 : true,
-                now : '주변정보게시판',
-                title : '주변정보게시판'
+                cate07 : true,
+                now : '문의하기',
+                title : '문의하기'
             })
             
             <div class="contents-area">
-                @@include('./modules/list-filter.html')
-
-                @@include('./modules/notice-tbl.html', {
-                    notice : true,
-                    page : 'sub_05_01_view'
+                @@include('./modules/input-table.html', {
+                    agree : true,
                 })
 
-                @@include('./modules/pagination.html')
+                <div class="btn-group">
+                    <button type="button" class="btn btn-lg btn-border-gray"><span>취소</span></button>
+                    <button type="button" class="btn btn-lg btn-point"><span>확인</span></button>
+                </div>
             </div>
         </div>
 

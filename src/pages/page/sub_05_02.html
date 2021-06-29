@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('./layout/head.html')
+</head>
+<body>
+    <div class="skip-navigation">
+        <a href="#container">메뉴 건너뛰기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        @@include('./layout/header.html')
+        <!-- // header -->
+
+        <div id="container" class="container">
+            @@include('./layout/page-title.html', {
+                cate05 : true,
+                now : '주변정보게시판',
+                title : '주변정보게시판'
+            })
+            
+            <div class="contents-area">
+                <div class="img-list-wrap">
+                    <ul class="lists">
+                        <li>
+                            <div class="inner">
+                                <span class="thumb"><img src="/images/img/img-guide01.jpg" alt=""></span>
+                                <div class="info">
+                                    <p class="tit">관광지 이름이 들어감</p>
+                                    <p class="desc">관광지 설명이 들어감 관광지 설명이 들어감 관광지 설명이 들어감 관광지 설명이 들어감 관광지 설명이 들어감 관광지 설명이 들어감 관광지 설명이 들어감 관광지 설명이 들어감 관광지 설명이 들어감</p>
+                                    <p class="by"><span>노블레스호텔 제주에서</span><em>자가용 5분</em></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="inner">
+                                <span class="thumb"><img src="/images/img/img-guide01.jpg" alt=""></span>
+                                <div class="info">
+                                    <p class="tit">관광지 이름이 들어감</p>
+                                    <p class="desc">관광지 설명이 들어감 관광지 설명이 들어감 관광지 설명이 들어감 관광지 설명이 들어감 관광지 설명이 들어감 관광지 설명이 들어감 관광지 설명이 들어감 관광지 설명이 들어감 관광지 설명이 들어감</p>
+                                    <p class="by"><span>노블레스호텔 제주에서</span><em>자가용 5분</em></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                @@include('./modules/pagination.html')
+            </div>
+        </div>
+
+        <!-- footer -->
+        @@include('./layout/footer.html')
+        <!-- // footer -->
+    </div>
+</body>
+</html>

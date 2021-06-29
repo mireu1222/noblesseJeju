@@ -1,14 +1,24 @@
 <div class="thumb-list-wrap">
     <!-- 게시글이 있을 때 -->
     <ul class="lists">
-        @@for (var i=0; i < lists; i++) {
-            <li>
-                <a href="@@link" class="inner">
-                    <span class="thumb" style="background-image:url('/images/@thumb.jpg');"></span>
-                    <p class="tit"><span class="blind">이벤트 제목</span>이벤트 제목이 들어감</p>
-                    <p class="desc"><span class="blind">이벤트 내용</span>이벤트 내용이 들어감 이벤트 내용이 들어감 이벤트 내용이 들어감 이벤트 내용이 들어감이벤트 내용이 들어감</p>
-                    <p class="date"><span class="blind">이벤트기간</span>2021.00.00 ~ 2021.00.00</p>
-                </a>
+        @@for (var i=0; i < lists.length; i++) {
+            <li class="items">
+                @@if(context.thumbType) {
+                <a href="@@link" class="thumb" style="background-image:url('/images/img/img-guide01.jpg');"><span class="blind">`+lists[i].title+` 자세히보기</span></a>
+                }
+                @@if(context.videoType) {
+                <a href="#video" class="thumb video" style="background-image:url('/images/img/img-guide02.jpg');" data-control="videomodal"><span class="blind">`+lists[i].title+` 영상 보기</span></a>
+                }
+                <div class="info">
+                    @@if(context.videoType) {
+                    <p class="src" aria-hidden="true">`+lists[i].video+`</p>
+                    <p class="tit">`+lists[i].title+`</p>
+                    }
+                    @@if(context.thumbType) {
+                    <a href="@@link" class="tit">`+lists[i].title+`</a>
+                    }
+                    <p class="desc">`+lists[i].desc+`</p>
+                </div>
             </li>
         }
     </ul>
@@ -17,4 +27,3 @@
     <p class="nodata">게시글이 없습니다.</p>
     <!-- // nodata -->
 </div>
-@@include('./modules/pagination.html')

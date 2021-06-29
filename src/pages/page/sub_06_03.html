@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('./layout/head.html')
+</head>
+<body>
+    <div class="skip-navigation">
+        <a href="#container">메뉴 건너뛰기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        @@include('./layout/header.html')
+        <!-- // header -->
+
+        <div id="container" class="container">
+            @@include('./layout/page-title.html', {
+                cate06 : true,
+                now : '동영상갤러리',
+                title : '동영상갤러리'
+            })
+            
+            <div class="contents-area">
+                @@include('./modules/thumb-list.html', {
+                    videoType : true,
+                    lists : [
+                        {
+                            title : '제목이 들어감',
+                            desc : '미리보기 내용이 들어감',
+                            video : 'https://www.youtube.com/embed/f_Ldl8QcIaU'
+                        },
+                        {
+                            title : '제목이 들어감1',
+                            desc : '미리보기 내용이 들어감1',
+                            video : 'https://www.youtube.com/embed/f_Ldl8QcIaU'
+                        },
+                        {
+                            title : '제목이 들어감2',
+                            desc : '미리보기 내용이 들어감2',
+                            video : 'https://www.youtube.com/embed/f_Ldl8QcIaU'
+                        },
+                        {
+                            title : '제목이 들어감3',
+                            desc : '미리보기 내용이 들어감3',
+                            video : 'https://www.youtube.com/embed/f_Ldl8QcIaU'
+                        },
+                    ]
+                })
+
+                @@include('./modules/pagination.html')
+            </div>
+        </div>
+
+        <!-- footer -->
+        @@include('./layout/footer.html')
+        <!-- // footer -->
+    </div>
+
+    <script>
+        $(function(){
+            $('[data-control="videomodal"]').videoModal();
+        });
+    </script>
+</body>
+</html>

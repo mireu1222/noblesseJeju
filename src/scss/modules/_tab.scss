@@ -1,70 +1,42 @@
 /* tab */
-.button-tabs {
-    overflow:hidden;
-    margin-bottom:100px;
-    ul.tabs {
-        display:flex;
-        li {
-            margin-left:20px;
-            &:first-child {
-                margin-left:0;
-            }
-            a {
-                display:block;
-                height:44px;
-                padding:0 18px;
-                border:1px solid $border;
-                border-radius:22px;
-                color:$placeholder;
-                font-size:18px;
-                line-height:42px;
-            }
-            &.active a {
-                color:$white;
-                background:$point;
-                border-color:$point;
-            }
-        }
-    }
-}
-
 .border-tabs {
     overflow:hidden;
-    margin-bottom:50px;
+    margin-bottom:20px;
+    @include mobile {
+        margin-bottom:10px;
+    }
+    .scrolls {        
+        overflow:hidden;
+        text-align:center;
+    }
     ul.tabs {
         position:relative;
-        display:flex;
-        &::before {
-            content:' ';
-            position:absolute;
-            left:0;
-            bottom:0;
-            right:0;
-            height:1px;
-            background:$point;
-        }
+        display:inline-block;
+        vertical-align:top;
+        font-size:0;
+        white-space:nowrap;
+        text-align:center;
         li {
             position:relative;
-            flex:1;
+            display:inline-block;
+            vertical-align:top;
+            &::after {
+                content:' ';
+                display:inline-block;
+                vertical-align:middle;
+                width:1px;
+                height:12px;
+                margin:0 20px;
+                background:$border;
+            }
+            &:last-child::after {
+                display:none;
+            }
             a {
-                display:block;
-                height:60px;
-                border:1px solid transparent;
-                border-bottom:none;
+                display:inline-block;
+                vertical-align:middle;
                 color:$placeholder;
-                font-size:20px;
-                line-height:59px;
-                text-align:center;
-            }
-            &:first-child {
-                a {
-                    border-left:none;
-                }
-            }
-            &:last-child {
-                a {
-                    border-right:none;
-                }
+                @include font;
             }
             &.active {
                 a {
