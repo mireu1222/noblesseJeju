@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('./layout/head.html')
+</head>
+<body>
+    <div class="skip-navigation">
+        <a href="#container">메뉴 건너뛰기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        @@include('./layout/header.html')
+        <!-- // header -->
+
+        <div id="container" class="container">
+            @@include('./layout/page-title.html', {
+                cate04 : true,
+                now : '야외시설',
+                title : '야외시설'
+            })
+
+            <div class="visual-list-wrap type2">
+                <ul class="lists">
+                    @@loop('./modules/visual-list.html', [
+                        {
+                            img : 'img-conv04',
+                            tit : '야외시설1',
+                            convType : true,
+                        }, 
+                        {
+                            img : 'img-conv04',
+                            tit : '야외시설2',
+                            convType : true,
+                        },
+                        {
+                            img : 'img-conv04',
+                            tit : '야외시설3',
+                            convType : true,
+                        }, {
+                            img : 'img-conv04',
+                            tit : '야외시설4',
+                            convType : true,
+                        }
+                    ])
+                </ul>
+            </div>
+        </div>
+
+        <!-- footer -->
+        @@include('./layout/footer.html')
+        <!-- // footer -->
+    </div>
+</body>
+</html>

@@ -122,18 +122,61 @@
                                 margin-top:0;
                             }
                             dl {
-                                @include clearfix;
+                                display:flex;
+                                align-items:center;
                                 dt {
-                                    float:left;
                                     width:85px;
+                                    min-width:85px;
+                                    max-width:85px;
                                     @include font;
                                     color:$point;
                                     font-weight:700;
                                 }
                                 dd {
-                                    margin-left:85px;
+                                    width:calc(100% - 85px);
                                     @include font;
                                     color:$cont;
+                                    word-break:keep-all;
+                                    span {
+                                        display:inline-block;
+                                    }
+                                }
+                            }
+                        }
+                        &.icon-type {
+                            margin:30px 0 0;
+                            @include mobile {
+                                margin-top:15px;
+                            }
+                            > li {
+                                position:relative;
+                                padding:9px 0 9px 50px;
+                                @include mobile {
+                                    padding:4px 0 5px 40px;
+                                }
+                                &::before {
+                                    content:' ';
+                                    position:absolute;
+                                    top:50%;
+                                    left:0;
+                                    width:42px;
+                                    height:42px;
+                                    margin-top:-21px;
+                                    background-size:100%;
+                                    @include mobile {
+                                        width:30px;
+                                        height:30px;
+                                        margin-top:-15px;
+                                    }
+                                }
+                                &.spot::before {
+                                    background-image:url('/images/icon/icon-spot.png');
+                                }
+                                &.time::before {
+                                    background-image:url('/images/icon/icon-time.png');
+                                }
+                                &.qst::before {
+                                    background-image:url('/images/icon/icon-qst.png');
                                 }
                             }
                         }
@@ -441,6 +484,9 @@
             @include mobile {
                 padding:30px 0;
             }
+            &:first-child {
+                padding-top:0;
+            }
             &:last-child {
                 padding-bottom:0;
                 border-bottom:none;
@@ -465,6 +511,16 @@
                 @include tablet {
                     margin-left:0;
                     margin-top:20px;
+                }
+                .tbl-wrap {
+                    margin:20px 0;
+                }
+                .desc-txt {
+                    @include font;
+                    word-break:keep-all;
+                    &:first-child {
+                        padding-top:8px;
+                    }
                 }
             }
             .icon-lists {
@@ -501,7 +557,7 @@
             }
             .service-info {
                 position:relative;
-                padding-left:8px;
+                padding-top:0;
                 padding-left:60px;
                 @include mobile {
                     padding-left:40px;
@@ -717,6 +773,183 @@
             font-size:30px;
             @include mobile {
                 font-size:24px;
+            }
+        }
+    }
+}
+
+.convention-wrap {
+    .tit-wrap {
+        h3.tit {
+            @include font-title;
+            word-break:keep-all;
+        }
+        .desc {
+            margin-top:10px;
+            color:$gray;
+            @include font;
+            word-break:keep-all;
+        }
+    }
+    .conv-lists {
+        display:flex;
+        margin-top:50px;
+        @include mobile {
+            display:block;
+            margin-top:30px;
+        }
+        > li {
+            width:calc((100% - 40px) / 2);
+            margin-left:40px;
+            &:first-child {
+                margin-left:0;
+            }
+            @include mobile {
+                width:100%;
+                margin:0;
+                margin-top:30px;
+                &:first-child {
+                    margin-top:0;
+                }
+            }
+        }
+        .inner {
+            .thumb {
+                display:block;
+                width:100%;
+                margin-bottom:30px;
+                @include calcs(padding-top, 220px, 400px);
+                background-size:cover;
+                background-position:center;
+                background-repeat:no-repeat;
+                @include mobile {
+                    margin-bottom:15px;
+                }
+            }
+            .tit {
+                font-size:24px;
+                font-weight:700;
+                word-break:keep-all;
+                @include mobile {
+                    font-size:18px;
+                }
+            }
+            .desc {
+                margin-top:15px;
+                color:$cont;
+                @include font;
+                word-break:keep-all;
+                @include mobile {
+                    margin-top:10px;
+                }
+            }
+            .pp {
+                margin-top:20px;
+                color:$point2;
+                @include font;
+                font-weight:500;
+                em {
+                    margin-left:20px;
+                }
+                @include mobile {
+                    margin-top:15px;
+                }
+            }
+            .btns {
+                display:flex;
+                margin-top:30px;
+                padding-top:40px;
+                border-top:1px solid $border;
+                @include mobile {
+                    margin-top:15px;
+                    padding-top:0;
+                    border-top:none;
+                }
+                .btn {
+                    flex:1;
+                    margin-left:10px;
+                    &:first-child {
+                        margin-left:0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.facil-lists {
+    overflow:hidden;
+    ul.lists {
+        display:flex;
+        flex-wrap:wrap;
+        @include calcs(margin-top, -100px, 1280px);
+        @include calcs(margin-left, -100px, 1280px);
+        @include mobile {
+            display:block;
+            margin-top:0;
+            margin-left:0;
+        }
+        > li {
+            width:50%;
+            @include calcs(margin-top, 100px, 1380px);
+            @include calcs(padding-left, 100px, 1380px);
+            @include mobile {
+                width:100%;
+                margin-top:30px;
+                padding-left:0;
+                &:first-child {
+                    margin-top:0;
+                }
+            }
+        }
+        .inner {
+            .thumb {
+                display:block;
+                width:100%;
+                @include calcs(padding-top, 340px, 580px);
+                background-size:cover;
+                background-repeat:no-repeat;
+                background-position:center;
+            }
+            .info {
+                position:relative;
+                min-height:50px;
+                margin-top:30px;
+                padding-right:210px;
+                @include tablet {
+                    min-height:auto;
+                    margin-top:20px;
+                    padding-right:0;    
+                }
+                @include mobile {
+                    margin-top:10px;
+                }
+                .eyebrow {
+                    color:$cont;
+                    @include font;
+                    word-break:keep-all;
+                }
+                .tit {
+                    font-size:30px;
+                    font-weight:700;
+                    @include mobile {
+                        font-size:24px;
+                    }
+                }
+                .btn {
+                    position:absolute;
+                    top:50%;
+                    right:0;
+                    width:200px;
+                    margin-top:-25px;
+                    @include tablet {
+                        position:relative;
+                        top:auto;
+                        right:auto;
+                        width:100%;
+                        margin-top:20px;
+                    }
+                }
             }
         }
     }

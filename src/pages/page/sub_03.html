@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('./layout/head.html')
+</head>
+<body>
+    <div class="skip-navigation">
+        <a href="#container">메뉴 건너뛰기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        @@include('./layout/header.html')
+        <!-- // header -->
+
+        <div id="container" class="container">
+            @@include('./layout/page-title.html', {
+                cate03 : true,
+                title : 'CONVENTION'
+            })
+
+            <div class="contents-area">
+                <div class="convention-wrap">
+                    <div class="tit-wrap">
+                        <h3 class="tit">다양한 형태의 행사를 치룰 수 있는 최적의 장소</h3>
+                        <p class="desc">노블레스호텔 제주는 2,000명 수용이 가능한 컨벤션홀과 다양한 인원수용이 가능한 다수의 연회장을 보유하고 있어<br>국제학술대회 및 워크숍 등 다양한 형태의 행사를 치룰 수 있는 최적의 장소입니다.</p>
+                    </div>
+                    <ul class="conv-lists">
+                        <li>
+                            <div class="inner">
+                                <a href="/page/sub_03_01.html" class="thumb" style="background-image:url('/images/img/img-conv04.jpg')"></a>
+                                <p class="tit">대연회장</p>
+                                <p class="desc">고객님의 행사에 따라 원하는 공간으로 디자인이 가능한 대연회장은 487평 규모에 2,000명 동시수용가능 하며, 최첨단 방송 시스템과 영상시설을 갖춘 최고의 컨벤션홀입니다.</p>
+                                <p class="pp">최대 수용인원<em>0,000명</em></p>
+                                <div class="btns">
+                                    <a href="" class="btn btn-md btn-point2"><span>컨벤션 브로슈어</span></a>
+                                    <a href="" class="btn btn-md btn-border-point2"><span>상담예약</span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="inner">
+                                <a href="/page/sub_03_02.html" class="thumb" style="background-image:url('/images/img/img-conv04.jpg')"></a>
+                                <p class="tit">소연회장</p>
+                                <p class="desc">고객님의 행사에 따라 원하는 공간으로 디자인이 가능한 대연회장은 487평 규모에 2,000명 동시수용가능 하며, 최첨단 방송 시스템과 영상시설을 갖춘 최고의 컨벤션홀입니다.</p>
+                                <p class="pp">최대 수용인원<em>0,000명</em></p>
+                                <div class="btns">
+                                    <a href="" class="btn btn-md btn-point2"><span>컨벤션 브로슈어</span></a>
+                                    <a href="" class="btn btn-md btn-border-point2"><span>상담예약</span></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        @@include('./layout/footer.html')
+        <!-- // footer -->
+    </div>
+</body>
+</html>

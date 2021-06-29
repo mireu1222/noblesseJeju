@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('./layout/head.html')
+</head>
+<body>
+    <div class="skip-navigation">
+        <a href="#container">메뉴 건너뛰기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        @@include('./layout/header.html')
+        <!-- // header -->
+
+        <div id="container" class="container">
+            @@include('./layout/page-title.html', {
+                cate04 : true,
+                title : 'FACILITIES'
+            })
+
+            <div class="contents-area">
+                <div class="facil-lists">
+                    <ul class="lists">
+                        <li>
+                            <div class="inner">
+                                <span class="thumb" style="background-image:url('/images/img/img-conv04.jpg');"></span>
+                                <div class="info">
+                                    <p class="eyebrow">간략한 설명글이 들어감</p>
+                                    <p class="tit">부대시설</p>
+                                    <a href="/page/sub_04_01.html" class="btn btn-md btn-border-point2"><span>자세히 보기</span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="inner">
+                                <span class="thumb" style="background-image:url('/images/img/img-conv04.jpg');"></span>
+                                <div class="info">
+                                    <p class="eyebrow">간략한 설명글이 들어감</p>
+                                    <p class="tit">산책로</p>
+                                    <a href="/page/sub_04_02.html" class="btn btn-md btn-border-point2"><span>자세히 보기</span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="inner">
+                                <span class="thumb" style="background-image:url('/images/img/img-conv04.jpg');"></span>
+                                <div class="info">
+                                    <p class="eyebrow">간략한 설명글이 들어감</p>
+                                    <p class="tit">야외시설</p>
+                                    <a href="/page/sub_04_03.html" class="btn btn-md btn-border-point2"><span>자세히 보기</span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="inner">
+                                <span class="thumb" style="background-image:url('/images/img/img-conv04.jpg');"></span>
+                                <div class="info">
+                                    <p class="eyebrow">간략한 설명글이 들어감</p>
+                                    <p class="tit">외부전경</p>
+                                    <a href="/page/sub_04_04.html" class="btn btn-md btn-border-point2"><span>자세히 보기</span></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        @@include('./layout/footer.html')
+        <!-- // footer -->
+    </div>
+</body>
+</html>

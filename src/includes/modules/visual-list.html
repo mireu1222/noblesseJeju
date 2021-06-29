@@ -3,18 +3,42 @@
         <span class="thumb" style="background-image:url('/images/img/@@img.jpg')"></span>
         <div class="info">
             <p class="tit">@@tit</p>
-            <p class="desc">@@desc</p>
-            <ul class="detail">
-                @@for(var i=0; i < list.length; i++){
-                <li>
-                    <dl>
-                        <dt>`+list[i].dt+`</dt>
-                        <dd>`+list[i].dd+`</dd>
-                    </dl>
-                </li>
-                }
-            </ul>
-            <a href="@@view.html" class="btn-view"><span>VIEW</span></a>
+            @@if(!context.convType){
+                <p class="desc">@@desc</p>
+                <ul class="detail">
+                    @@for(var i=0; i < list.length; i++){
+                    <li>
+                        <dl>
+                            <dt>`+list[i].dt+`</dt>
+                            <dd>`+list[i].dd+`</dd>
+                        </dl>
+                    </li>
+                    }
+                </ul>
+                <a href="@@view.html" class="btn-view"><span>VIEW</span></a>
+            }
+            @@if(context.convType){
+                <ul class="detail icon-type">
+                    <li class="spot">
+                        <dl>
+                            <dt>위치</dt>
+                            <dd>위치 설명</dd>
+                        </dl>
+                    </li>
+                    <li class="time">
+                        <dl>
+                            <dt>운영시간</dt>
+                            <dd>00:00~00:00<span>(일요일 00시 CLOSE)</span></dd>
+                        </dl>
+                    </li>
+                    <li class="qst">
+                        <dl>
+                            <dt>문의</dt>
+                            <dd>064-000-0000</dd>
+                        </dl>
+                    </li>
+                </ul>
+            }
         </div>
     </div>
 </li>
