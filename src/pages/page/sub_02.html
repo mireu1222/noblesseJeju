@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('./layout/head.html')
+</head>
+<body>
+    <div class="skip-navigation">
+        <a href="#container">메뉴 건너뛰기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        @@include('./layout/header.html')
+        <!-- // header -->
+
+        <div id="container" class="container">
+            @@include('./layout/page-title.html', {
+                cate02 : true,
+                title : 'DINING'
+            })
+
+            <div class="visual-list-wrap type2">
+                <ul class="lists">
+                    @@loop('./modules/visual-list.html', [
+                        {
+                            img : 'img-dining01',
+                            tit : '식당',
+                            desc : '식당 소개 문구가 들어감. 식당 소개 문구가 들어감. 식당 소개 문구가 들어감. 식당 소개 문구가 들어감.',
+                            list : [
+                                {
+                                    dt : '위치',
+                                    dd : '위치가 들어감'
+                                },
+                                {
+                                    dt : '영업시간',
+                                    dd : '00:00 ~ 00:00'
+                                },
+                            ],
+                            view : 'sub_02_01'
+                        },
+                        {
+                            img : 'img-dining02',
+                            tit : '커피숍',
+                            desc : '커피숍 소개 문구가 들어감. 커피숍 소개 문구가 들어감. 커피숍 소개 문구가 들어감. 커피숍 소개 문구가 들어감. 커피숍 소개 문구가 들어감.',
+                            list : [
+                                {
+                                    dt : '위치',
+                                    dd : '위치가 들어감'
+                                },
+                                {
+                                    dt : '영업시간',
+                                    dd : '00:00 ~ 00:00'
+                                },
+                            ],
+                            view : 'sub_02_01'
+                        },
+                    ])
+                </ul>
+            </div>
+        </div>
+
+        <!-- footer -->
+        @@include('./layout/footer.html')
+        <!-- // footer -->
+    </div>
+</body>
+</html>

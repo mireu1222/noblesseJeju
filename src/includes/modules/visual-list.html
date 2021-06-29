@@ -1,0 +1,20 @@
+<li>
+    <div class="inner">
+        <span class="thumb" style="background-image:url('/images/img/@@img.jpg')"></span>
+        <div class="info">
+            <p class="tit">@@tit</p>
+            <p class="desc">@@desc</p>
+            <ul class="detail">
+                @@for(var i=0; i < list.length; i++){
+                <li>
+                    <dl>
+                        <dt>`+list[i].dt+`</dt>
+                        <dd>`+list[i].dd+`</dd>
+                    </dl>
+                </li>
+                }
+            </ul>
+            <a href="@@view.html" class="btn-view"><span>VIEW</span></a>
+        </div>
+    </div>
+</li>

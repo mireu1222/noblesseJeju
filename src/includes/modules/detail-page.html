@@ -1,0 +1,345 @@
+<div class="detail-view-wrap">
+    @@if(context.room){
+        <p class="ment-top">룸 안내 문구가 들어감</p>
+    }
+    <!-- visual -->
+    <div class="detail-slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                @@if(context.room){
+                <!-- loop -->
+                <div class="swiper-slide">
+                    <span class="thumb" style="background-image:url('/images/img/img-room01.jpg')"></span>
+                </div>
+                <!-- // loop -->
+                <!-- loop -->
+                <div class="swiper-slide">
+                    <span class="thumb" style="background-image:url('/images/img/img-room01.jpg')"></span>
+                </div>
+                <!-- // loop -->
+                <!-- loop -->
+                <div class="swiper-slide">
+                    <span class="thumb" style="background-image:url('/images/img/img-room01.jpg')"></span>
+                </div>
+                <!-- // loop -->
+                <!-- loop -->
+                <div class="swiper-slide">
+                    <span class="thumb" style="background-image:url('/images/img/img-room01.jpg')"></span>
+                </div>
+                <!-- // loop -->
+                }
+                @@if(context.dining){
+                <!-- loop -->
+                <div class="swiper-slide">
+                    <span class="thumb" style="background-image:url('/images/img/img-dining01.jpg')"></span>
+                </div>
+                <!-- // loop -->
+                <!-- loop -->
+                <div class="swiper-slide">
+                    <span class="thumb" style="background-image:url('/images/img/img-dining01.jpg')"></span>
+                </div>
+                <!-- // loop -->
+                <!-- loop -->
+                <div class="swiper-slide">
+                    <span class="thumb" style="background-image:url('/images/img/img-dining01.jpg')"></span>
+                </div>
+                <!-- // loop -->
+                <!-- loop -->
+                <div class="swiper-slide">
+                    <span class="thumb" style="background-image:url('/images/img/img-dining01.jpg')"></span>
+                </div>
+                <!-- // loop -->
+                }
+            </div>
+        </div>
+        <div class="controls">
+            <button type="button" class="control-btn prev"><span class="blind">이전 슬라이드</span></button>
+            <button type="button" class="control-btn next"><span class="blind">다음 슬라이드</span></button>
+        </div>
+        <p class="fractions"></p>
+    </div>
+    <!-- // visual -->
+    @@if(context.room){
+        <!-- detail cont -->
+        <div class="detail-section">
+            <div class="sect-info">
+                <h3 class="tit">INFORMATION</h3>
+                <div class="gray-box">
+                    <ul class="info type1">
+                        <li>
+                            <dl>
+                                <dt>체크인</dt>
+                                <dd>14:00</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>체크아웃</dt>
+                                <dd>11:00</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <ul class="info type2">
+                        <li>
+                            <dl>
+                                <dt>인원</dt>
+                                <dd>기준 2~3인</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>객실수</dt>
+                                <dd>1실</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>크기</dt>
+                                <dd>39㎡</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>전망</dt>
+                                <dd>마운틴뷰</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>침대타입</dt>
+                                <dd>Double Bed1</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sect">
+                <h3 class="tit">객실편의사항</h3>
+                <div class="cont">
+                    <ul class="icon-lists">
+                        <li><span class="icon" aria-hidden="true"><img src="/images/icon/icon-fa01.png" alt=""></span>인터넷</li>
+                        <li><span class="icon" aria-hidden="true"><img src="/images/icon/icon-fa02.png" alt=""></span>헤어드라이기</li>
+                        <li><span class="icon" aria-hidden="true"><img src="/images/icon/icon-fa03.png" alt=""></span>전자도어 잠금장치</li>
+                        <li><span class="icon" aria-hidden="true"><img src="/images/icon/icon-fa04.png" alt=""></span>미니바(유료)</li>
+                        <li><span class="icon" aria-hidden="true"><img src="/images/icon/icon-fa05.png" alt=""></span>220v</li>
+                        <li><span class="icon" aria-hidden="true"><img src="/images/icon/icon-fa06.png" alt=""></span>케이블tv</li>
+                        <li><span class="icon" aria-hidden="true"><img src="/images/icon/icon-fa07.png" alt=""></span>모닝콜</li>
+                        <li><span class="icon" aria-hidden="true"><img src="/images/icon/icon-fa08.png" alt=""></span>냉장고</li>
+                        <li><span class="icon" aria-hidden="true"><img src="/images/icon/icon-fa09.png" alt=""></span>전기주전자</li>
+                        <li><span class="icon" aria-hidden="true"><img src="/images/icon/icon-fa10.png" alt=""></span>세면타올</li>
+                        <li><span class="icon" aria-hidden="true"><img src="/images/icon/icon-fa11.png" alt=""></span>면도확대경</li>
+                        <li><span class="icon" aria-hidden="true"><img src="/images/icon/icon-fa12.png" alt=""></span>비데</li>
+                        <li><span class="icon" aria-hidden="true"><img src="/images/icon/icon-fa13.png" alt=""></span>비상용품(방연마스크, 완강기, 손전등, 손망치)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sect">
+                <h3 class="tit">제공 서비스</h3>
+                <div class="cont">
+                    <div class="service-info icon01">
+                        <ul class="lists">
+                            <li>생수 2병 무료제공</li>
+                            <li>어메니티 : 비누, 샴푸, 바디워시, 면봉, 빗, 위생백, 샤워캡</li>
+                            <li>사우나 40%, 수영장 &middot; 헬스장 30% 할인</li>
+                            <li>무료주차</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sect">
+                <h3 class="tit">안내사항</h3>
+                <div class="cont">
+                    <div class="service-info icon02">
+                        <ul class="lists">
+                            <li>모든 객실은 금연입니다.</li>
+                            <li>호텔 내 취사 및 취사도구 반입은 금지입니다.</li>
+                            <li>호텔 내 반려동물 동반 입장은 불가합니다.</li>
+                        </ul>
+                        <div class="tbl-wrap mt-20 mb-20">
+                            <p class="tbl-desc">※ 예약 취소 위약금 안내</p>
+                            <table class="table info-table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" colspan="2">구분</th>
+                                        <th scope="col">당일</th>
+                                        <th scope="col">1일전</th>
+                                        <th scope="col">2일전</th>
+                                        <th scope="col">3일전</th>
+                                        <th scope="col">4일전</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">성수기</td>
+                                        <td>90%</td>
+                                        <td>90%</td>
+                                        <td>60%</td>
+                                        <td>40%</td>
+                                        <td>20%</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">비수기</td>
+                                        <td>주중</td>
+                                        <td>20%</td>
+                                        <td>10%</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>주말</td>
+                                        <td>30%</td>
+                                        <td>10%</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <ul class="lists">
+                            <li>취소요금은 총 숙박요금 기준입니다.</li>
+                            <li>성수기 : 성수기 일정은 호텔 사정상 변경되어질 수 있습니다.</li>
+                            <li>주말 : 금, 토요일 숙박, 공휴일 전일</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // detail cont -->
+        <!-- other room -->
+        <div class="other-rooms">
+            <h4 class="tit">OTHER ROOM</h4>
+            <ul class="rooms">
+                <li>
+                    <div class="inner">
+                        <span class="thumb" style="background-image:url('/images/img/img-room01.jpg');"></span>
+                        <div class="info">
+                            <p class="room">DOUBLE</p>
+                            <p class="desc">룸 설명 문구가 들어감</p>
+                            <a href="" class="btn-view"><span>VIEW</span></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <span class="thumb" style="background-image:url('/images/img/img-room01.jpg');"></span>
+                        <div class="info">
+                            <p class="room">DOUBLE</p>
+                            <p class="desc">룸 설명 문구가 들어감 룸 설명 문구가 들어감 룸 설명 문구가 들어감</p>
+                            <a href="" class="btn-view"><span>VIEW</span></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <span class="thumb" style="background-image:url('/images/img/img-room01.jpg');"></span>
+                        <div class="info">
+                            <p class="room">DOUBLE</p>
+                            <p class="desc">룸 설명 문구가 들어감</p>
+                            <a href="" class="btn-view"><span>VIEW</span></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- // other room -->
+    }
+    @@if(context.dining){
+        <!-- detail cont -->
+        <div class="detail-section">
+            <div class="sect-info">
+                <h3 class="tit">INFORMATION</h3>
+                <div class="gray-box size2">
+                    <ul class="info type1">
+                        <li>
+                            <dl>
+                                <dt>조식</dt>
+                                <dd>15,000원~16,000원</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>중 &middot; 석식</dt>
+                                <dd>15,000원~26,000원</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <ul class="info type2">
+                        <li>
+                            <dl>
+                                <dt>위치</dt>
+                                <dd>본관 1층</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>예약</dt>
+                                <dd>064-748-7161</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>영업시간</dt>
+                                <dd>07:00~21:00<span>(Break time : 14:00~17:00)</span></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sect">
+                <h3 class="tit">안내사항</h3>
+                <div class="cont">
+                    <div class="service-info noicon">
+                        <ul class="lists">
+                            <li>안주류 : 25,000원 ~ 35,000원</li>
+                            <li>영업시간은 영업장 사정에 따라 변동이 있을 수 있습니다.</li>
+                            <li>한식 및 한정식 메뉴 알아보기<a href="" class="btn btn-sm btn-cont"><span>MENU 보기</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // detail cont -->
+        <!-- more -->
+        <div class="other-rooms type2">
+            <h4 class="tit">이런 다이닝 장소는 어떠세요?</h4>
+            <ul class="dinings">
+                <li>
+                    <a href="" class="inner">
+                        <span class="thumb" style="background-image:url('/images/img/img-dining01.jpg');"></span>
+                        <p>단체식당 서라벌</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="inner">
+                        <span class="thumb" style="background-image:url('/images/img/img-dining01.jpg');"></span>
+                        <p>단체식당 서라벌</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="inner">
+                        <span class="thumb" style="background-image:url('/images/img/img-dining01.jpg');"></span>
+                        <p>단체식당 서라벌</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- // more -->
+    }
+    <script>
+        $(function(){
+            const detailSlider = new Swiper('.detail-slider .swiper-container', {
+                loop : true,
+                navigation : {
+                    prevEl : '.detail-slider .controls .control-btn.prev',
+                    nextEl : '.detail-slider .controls .control-btn.next',
+                },
+                pagination : {
+                    el : '.detail-slider .fractions',
+                    type : 'fraction'
+                },
+            });
+        });
+    </script>
+</div>

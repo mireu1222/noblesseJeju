@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('./layout/head.html', {
+        main : true
+    })
+</head>
+<body>
+    <div class="skip-navigation">
+        <a href="#container">메뉴 건너뛰기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        @@include('./layout/header.html', {
+            main : true
+        })
+        <!-- // header -->
+
+        <!-- main contents -->
+        <div id="container" class="main">
+            <!-- visual -->
+            <div class="main-visual">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url('/images/img/img-visual01.jpg')">
+                            <div class="text">
+                                <h2 class="tit">The Art of Nature, HOTEL NOBLESSE</h2>
+                                <p class="desc">자연의 예술적인 아름다움과 즐거움, 그곳에서의 휴식</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background-image:url('/images/img/img-visual01.jpg')">
+                            <div class="text">
+                                <h2 class="tit">The Art of Nature, HOTEL NOBLESSE1</h2>
+                                <p class="desc">자연의 예술적인 아름다움과 즐거움, 그곳에서의 휴식</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background-image:url('/images/img/img-visual01.jpg')">
+                            <div class="text">
+                                <h2 class="tit">The Art of Nature, HOTEL NOBLESSE2</h2>
+                                <p class="desc">자연의 예술적인 아름다움과 즐거움, 그곳에서의 휴식</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <div class="buttons">
+                        <button type="button" class="control-btn prev"><span class="blind">이전 슬라이드</span></button>
+                        <button type="button" class="control-btn next"><span class="blind">다음 슬라이드</span></button>
+                        <button type="button" class="play-control pause"><span class="blind">일시정지</span></button>
+                    </div>
+                    <p class="fractions"></p>
+                </div>
+            </div>
+            <!-- // visual -->
+            <!-- section 01 -->
+            <section class="sect01">
+                <div class="area">
+                    <div class="tit-wrap">
+                        <h2 class="sect-title">Guide to Noblesse Hotel Jeju</h2>
+                        <p class="desc">노블레스 제주에서 즐기는 여행</p>
+                    </div>
+                    <div class="sect01-slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <span class="thumb" style="background-image:url('/images/img/img-guide01.jpg');"></span>
+                                    <p class="tit">제주공항 1km</p>
+                                    <p class="desc">제주공항에서 가까운 위치에 있는 호텔로 픽업서비스 제공합니다.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <span class="thumb" style="background-image:url('/images/img/img-guide02.jpg');"></span>
+                                    <p class="tit">다양한 부대시설</p>
+                                    <p class="desc">제주노블레스 호텔에서 여행의 즐거움과 추억을 함께 만들어 보세요!</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <span class="thumb" style="background-image:url('/images/img/img-guide01.jpg');"></span>
+                                    <p class="tit">제주공항 1km2</p>
+                                    <p class="desc">제주공항에서 가까운 위치에 있는 호텔로 픽업서비스 제공합니다.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <span class="thumb" style="background-image:url('/images/img/img-guide02.jpg');"></span>
+                                    <p class="tit">다양한 부대시설3</p>
+                                    <p class="desc">제주노블레스 호텔에서 여행의 즐거움과 추억을 함께 만들어 보세요!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-controls">
+                    <button type="button" class="control-btn prev"><span class="blind">이전 슬라이드</span></button>
+                    <button type="button" class="control-btn next"><span class="blind">다음 슬라이드</span></button>
+                </div>
+            </section>
+            <!-- // section 01 -->
+            <!-- section02 -->
+            <section class="sect02">
+                <div class="area">
+                    <div class="tit-wrap">
+                        <p class="desc">새로운 제주여행을 디자인하다</p>
+                        <h2 class="sect-title">CONVENTION &amp;<br>SERVICES</h2>
+                    </div>
+                </div>
+                <div class="sect02-slider">
+                    <div class="img-slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <span class="thumb" style="background-image:url('/images/img/img-conv01.jpg')"></span>
+                                </div>
+                                <div class="swiper-slide">
+                                    <span class="thumb" style="background-image:url('/images/img/img-conv02.jpg')"></span>
+                                </div>
+                                <div class="swiper-slide">
+                                    <span class="thumb" style="background-image:url('/images/img/img-conv03.jpg')"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-slider">
+                        <div class="area">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <p class="tit">대연회장1</p>
+                                        <p class="desc">고객님의 행사에 따라 원하는 공간으로 디자인이 가능한 대연회장은 487평 규모에 2,000명 동시수용가능 하며, 최첨단 방송 시스템과 영상시설을 갖춘 최고의 컨벤션홀입니다.</p>
+                                        <a href="" class="btn-more"><span>자세히보기</span></a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <p class="tit">대연회장2</p>
+                                        <p class="desc">고객님의 행사에 따라 원하는 공간으로 디자인이 가능한 대연회장은 487평 규모에 2,000명 동시수용가능 하며, 최첨단 방송 시스템과 영상시설을 갖춘 최고의 컨벤션홀입니다.</p>
+                                        <a href="" class="btn-more"><span>자세히보기</span></a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <p class="tit">대연회장3</p>
+                                        <p class="desc">고객님의 행사에 따라 원하는 공간으로 디자인이 가능한 대연회장은 487평 규모에 2,000명 동시수용가능 하며, 최첨단 방송 시스템과 영상시설을 갖춘 최고의 컨벤션홀입니다.</p>
+                                        <a href="" class="btn-more"><span>자세히보기</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-controls">
+                        <button type="button" class="control-btn prev"><span class="blind">이전 슬라이드</span></button>
+                        <button type="button" class="control-btn next"><span class="blind">다음 슬라이드</span></button>
+                    </div>
+                </div>
+            </section>
+            <!-- // section02 -->
+            <!-- section03 -->
+            <section class="sect03">
+                <div class="area">
+                    <div class="tit-wrap">
+                        <h2 class="sect-title">ROOMS</h2>
+                        <p class="desc">노블레스 제주와 함께하는 여행의 즐거움</p>
+                    </div>
+                    <div class="room-img-wraps">
+                        <ul class="hover-bgs">
+                            <li class="room01"><span aria-hidden="true" style="background-image:url('/images/img/img-room01.jpg');"></span></li>
+                            <li class="room02"><span aria-hidden="true" style="background-image:url('/images/img/img-room02.jpg');"></span></li>
+                            <li class="room03"><span aria-hidden="true" style="background-image:url('/images/img/img-room03.jpg');"></span></li>
+                            <li class="room04"><span aria-hidden="true" style="background-image:url('/images/img/img-room04.jpg');"></span></li>
+                            <li class="room05"><span aria-hidden="true" style="background-image:url('/images/img/img-room05.jpg');"></span></li>
+                            <li class="room06"><span aria-hidden="true" style="background-image:url('/images/img/img-room06.jpg');"></span></li>
+                        </ul>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper rooms">
+                                <div class="swiper-slide">
+                                    <a href="" class="inner" data-num="room01">
+                                        <span class="thumb" style="background-image:url('/images/img/img-room01.jpg')"></span>
+                                        <p>DOUBLE</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="inner" data-num="room02">
+                                        <span class="thumb" style="background-image:url('/images/img/img-room02.jpg')"></span>
+                                        <p>TRIPLE</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="inner" data-num="room03">
+                                        <span class="thumb" style="background-image:url('/images/img/img-room03.jpg')"></span>
+                                        <p>FAMILY</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="inner" data-num="room04">
+                                        <span class="thumb" style="background-image:url('/images/img/img-room04.jpg')"></span>
+                                        <p>DELUXE TWIN</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="inner" data-num="room05">
+                                        <span class="thumb" style="background-image:url('/images/img/img-room05.jpg')"></span>
+                                        <p>ONDOL</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="inner" data-num="room06">
+                                        <span class="thumb" style="background-image:url('/images/img/img-room06.jpg')"></span>
+                                        <p>DELUXE TRIPLE</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="bar bar01"></span>
+                        <span class="bar bar02"></span>
+                        <span class="bar bar03"></span>
+                        <div class="swiper-controls">
+                            <button type="button" class="control-btn prev"><span class="blind">이전 슬라이드</span></button>
+                            <button type="button" class="control-btn next"><span class="blind">다음 슬라이드</span></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- // section03 -->
+            <!-- section04 -->
+            <section class="sect04">
+                <div class="area">
+                    <div class="map-wrap">
+                        <div id="daumRoughmapContainer1624845240298" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                    </div>
+                    <div class="map-info">
+                        <p class="eyebrow">제주노블레스관광호텔</p>
+                        <p class="address">제주특별자치도 제주시 월성로4길 19</p>
+                        <p class="call">TEL 064-748-7161</p>
+                    </div>
+                </div>
+            </section>
+            <!-- // section04 -->
+        </div>
+        <!-- // main contents -->
+
+        <!-- footer -->
+        @@include('./layout/footer.html')
+        <!-- // footer -->
+    </div>
+
+    <script>
+        $(function(){
+            var oh = $(window).outerHeight(true);
+            $('.main-visual').css('height', oh);
+            $(window).resize(function(){
+                var oh = $(window).outerHeight(true);
+                $('.main-visual').css('height', oh);
+            });
+
+            // main visual
+            const visualSlider = new Swiper('.main-visual .swiper-container', {
+                autoplay : {
+                    delay : 4000,
+                    disableOnInteraction : false
+                },
+                loop : true,
+                pagination : {
+                    el : '.main-visual .controls .fractions',
+                    type : 'fraction'
+                },
+                navigation : {
+                    prevEl : '.main-visual .controls .control-btn.prev',
+                    nextEl : '.main-visual .controls .control-btn.next',
+                }
+            });
+
+            $('.main-visual .controls .play-control').click(function(){
+                if ($(this).hasClass('pause')){
+                    $(this).removeClass('pause');
+                    $(this).addClass('play');
+                    $(this).find('span').text('재생');
+                    visualSlider.autoplay.stop();
+                } else if ($(this).hasClass('play')) {
+                    $(this).removeClass('play');
+                    $(this).addClass('pause');
+                    $(this).find('span').text('일시정지');
+                    visualSlider.autoplay.start();
+                }
+            });
+
+            // sect01
+            const slider01 = new Swiper('.sect01-slider .swiper-container', {
+                loop : true,
+                slidesPerView : 1,
+                navigation : {
+                    prevEl : '.sect01 .swiper-controls .control-btn.prev',
+                    nextEl : '.sect01 .swiper-controls .control-btn.next',
+                },
+                breakpoints : {
+                    768 : {
+                        slidesPerView : 2,
+                    }
+                }
+            });
+
+            // sect02
+            const slider02 = new Swiper('.sect02-slider .img-slider .swiper-container', {
+                loop : true,
+                slidesPerView : 'auto',
+                navigation : {
+                    prevEl : '.sect02 .swiper-controls .control-btn.prev',
+                    nextEl : '.sect02 .swiper-controls .control-btn.next',
+                },
+                breakpoints : {
+                    1025 : {
+                        spaceBetween : 80,
+                    }
+                }
+            });  
+            const slider02text = new Swiper('.sect02-slider .text-slider .swiper-container', {
+                direction : 'horizontal',
+                loop : true,
+                breakpoints: {
+                    1025 : {
+                        direction : 'vertical'
+                    }
+                }
+            });
+            $('.sect02 .swiper-controls .control-btn').click(function(){
+                if ($(this).hasClass('prev')){
+                    slider02text.slidePrev();
+                } else if ($(this).hasClass('next')){
+                    slider02text.slideNext();
+                }
+            });
+            slider02text.on('slideNextTransitionStart', function(){
+                slider02.slideNext();
+            });
+            slider02text.on('slidePrevTransitionStart', function(){
+                slider02.slidePrev();
+            });
+            
+            // sect03
+            bgSwitch();
+            const onDesktop = window.matchMedia('(min-width: 767px)');
+            let roomSlider;
+            const breakpointChecker = function() {
+                if (onDesktop.matches === true) {
+                    if (roomSlider !== undefined) roomSlider.destroy(true, true);
+                    return;
+                } else if (onDesktop.matches === false) {
+                    return enabledSwiper();
+                }
+            }
+            const enabledSwiper = function() {
+                roomSlider = new Swiper('.room-img-wraps .swiper-container', {
+                    loop : false,
+                    effect : 'coverflow',
+                    grabCursor: false,
+                    slidesPerView: 'auto',
+                    coverflowEffect: {
+                        rotate: 0,
+                        stretch : 0,
+                        depth: 150,
+                        modifier : 1,
+                        stretch : -40,
+                        slidesShadows: true,
+                    },
+                    navigation : {
+                        prevEl : '.room-img-wraps .swiper-controls .control-btn.prev',
+                        nextEl : '.room-img-wraps .swiper-controls .control-btn.next',
+                    },
+                })
+            }
+            onDesktop.addListener(breakpointChecker);
+            breakpointChecker();
+            
+        });
+    </script>
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+    <script charset="UTF-8">
+        new daum.roughmap.Lander({
+            "timestamp" : "1624845240298",
+            "key" : "26e9f",
+            "mapHeight" : "500"
+        }).render();
+    </script>
+</body>
+</html>

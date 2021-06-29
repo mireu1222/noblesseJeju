@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('./layout/head.html')
+</head>
+<body>
+    <div class="skip-navigation">
+        <a href="#container">메뉴 건너뛰기</a>
+    </div>
+    <div id="wrap">
+        <!-- header -->
+        @@include('./layout/header.html')
+        <!-- // header -->
+
+        <div id="container" class="container">
+            @@include('./layout/page-title.html', {
+                cate01 : true,
+                title : 'ROOMS'
+            })
+
+            <div class="visual-list-wrap">
+                <ul class="lists">
+                    @@loop('./modules/visual-list.html', [
+                        {
+                            img : 'img-room01',
+                            tit : '더블룸',
+                            desc : '심플하면서도 세련된 주니어 스위트룸은 감각적인 디자인의 세미키친과 아늑한 스튜디오 형 객실을 자랑합니다.',
+                            list : [
+                                {
+                                    dt : '침대타입',
+                                    dd : '더블침대 1개'
+                                },
+                                {
+                                    dt : '기준인원',
+                                    dd : '2인(최대 2인)'
+                                },
+                                {
+                                    dt : '객&nbsp;&nbsp;실&nbsp;&nbsp;수',
+                                    dd : '98실'
+                                }
+                            ],
+                            view : 'sub_01_01'
+                        },
+                        {
+                            img : 'img-room02',
+                            tit : '트리플룸',
+                            desc : '심플하면서도 세련된 주니어 스위트룸은 감각적인 디자인의 세미키친과 아늑한 스튜디오 형 객실을 자랑합니다.',
+                            list : [
+                                {
+                                    dt : '침대타입',
+                                    dd : '더블침대 1개'
+                                },
+                                {
+                                    dt : '기준인원',
+                                    dd : '2인(최대 2인)'
+                                },
+                                {
+                                    dt : '객&nbsp;&nbsp;실&nbsp;&nbsp;수',
+                                    dd : '98실'
+                                }
+                            ],
+                            view : 'sub_01_02'
+                        },
+                        {
+                            img : 'img-room03',
+                            tit : '패밀리룸',
+                            desc : '심플하면서도 세련된 주니어 스위트룸은 감각적인 디자인의 세미키친과 아늑한 스튜디오 형 객실을 자랑합니다.',
+                            list : [
+                                {
+                                    dt : '침대타입',
+                                    dd : '더블침대 1개'
+                                },
+                                {
+                                    dt : '기준인원',
+                                    dd : '2인(최대 2인)'
+                                },
+                                {
+                                    dt : '객&nbsp;&nbsp;실&nbsp;&nbsp;수',
+                                    dd : '98실'
+                                }
+                            ],
+                            view : 'sub_01_03'
+                        },
+                        {
+                            img : 'img-room04',
+                            tit : '디럭스트윈룸',
+                            desc : '심플하면서도 세련된 주니어 스위트룸은 감각적인 디자인의 세미키친과 아늑한 스튜디오 형 객실을 자랑합니다.',
+                            list : [
+                                {
+                                    dt : '침대타입',
+                                    dd : '더블침대 1개'
+                                },
+                                {
+                                    dt : '기준인원',
+                                    dd : '2인(최대 2인)'
+                                },
+                                {
+                                    dt : '객&nbsp;&nbsp;실&nbsp;&nbsp;수',
+                                    dd : '98실'
+                                }
+                            ],
+                            view : 'sub_01_04'
+                        },
+                        {
+                            img : 'img-room05',
+                            tit : '한실온돌룸',
+                            desc : '심플하면서도 세련된 주니어 스위트룸은 감각적인 디자인의 세미키친과 아늑한 스튜디오 형 객실을 자랑합니다.',
+                            list : [
+                                {
+                                    dt : '침대타입',
+                                    dd : '더블침대 1개'
+                                },
+                                {
+                                    dt : '기준인원',
+                                    dd : '2인(최대 2인)'
+                                },
+                                {
+                                    dt : '객&nbsp;&nbsp;실&nbsp;&nbsp;수',
+                                    dd : '98실'
+                                }
+                            ],
+                            view : 'sub_01_05'
+                        },
+                        {
+                            img : 'img-room06',
+                            tit : '디럭스 트리플룸',
+                            desc : '심플하면서도 세련된 주니어 스위트룸은 감각적인 디자인의 세미키친과 아늑한 스튜디오 형 객실을 자랑합니다.',
+                            list : [
+                                {
+                                    dt : '침대타입',
+                                    dd : '더블침대 1개'
+                                },
+                                {
+                                    dt : '기준인원',
+                                    dd : '2인(최대 2인)'
+                                },
+                                {
+                                    dt : '객&nbsp;&nbsp;실&nbsp;&nbsp;수',
+                                    dd : '98실'
+                                }
+                            ],
+                            view : 'sub_01_06'
+                        }
+                    ])
+                </ul>
+            </div>
+        </div>
+
+        <!-- footer -->
+        @@include('./layout/footer.html')
+        <!-- // footer -->
+    </div>
+</body>
+</html>

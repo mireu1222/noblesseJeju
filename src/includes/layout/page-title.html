@@ -1,0 +1,26 @@
+<!-- breadcrumb -->
+<nav class="breadcrumb">
+    <ol>
+        <li><a href="/">HOME</a></li>
+        @@if(context.cate01){<li><a href="/page/sub_01.html">ROOMS</a></li>}
+        @@if(context.cate02){<li><a href="/page/sub_02.html">DINING</a></li>}
+        @@if(context.cate03){<li><a href="/page/sub_03.html">CONVENTION</a></li>}
+        @@if(context.cate04){<li><a href="/page/sub_04.html">FACILITIES</a></li>}
+        @@if(context.cate05){<li><a href="/page/sub_05.html">INFORMATION</a></li>}
+        @@if(context.cate06){<li><a href="/page/sub_06.html">PR ROOM</a></li>}
+        @@if(context.cate07){<li><a href="/page/sub_07.html">SUPPORT</a></li>}
+        @@if(!context.now){
+            <li aria-current="page">OVERVIEW</li>
+        }
+        @@if(context.now){
+            <li aria-current="page">@@now</li>
+        }
+    </ol>
+</nav>
+<!-- // breadcrumb -->
+<!-- page title -->
+<div class="page-title">
+    <h2 class="title">@@title</h2>
+    <p class="desc">노블레스 제주에서 즐기는 여행</p>
+</div>
+<!-- // page title -->
